@@ -30,7 +30,7 @@ The codebase is fully integratable inside the TensorFlow and Keras code pipeline
 </div>
 <br/>
 
-*Note: The images above represent the architectural modifications. They depict 2D convolutional layers, whereas this project is focused on 1D convolutions. The ResNet-C image is sourced from the referenced paper, while the shortcut image is created by the author.*
+*Note: The images above represent the architectural modifications. They depict 2D convolutional layers, whereas this project is focused on 3D convolutions. The ResNet-C image is sourced from the referenced paper, while the shortcut image is created by the author.*
 
 ## Installation & Usage
 This code is compatible with **Python 3.12.8** and **TensorFlow 2.18.0**.
