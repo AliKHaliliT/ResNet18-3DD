@@ -3,11 +3,6 @@ import tensorflow as tf
 from .assets.layers.conv3d_layer import Conv3DLayer
 from .assets.blocks.residual3d_d import Residual3DD
 from typing import Union, Any
-import logging
-
-
-# Configure logging
-logging.basicConfig(level=logging.WARNING, format="%(levelname)s: %(message)s")
 
 
 @register_keras_serializable()
@@ -97,10 +92,6 @@ class ResNet183DD(tf.keras.Model):
         None.
 
         """
-
-        if input_shape[1] < 4 or input_shape[2] < 32 or input_shape[3] < 32:
-            logging.warning("Caution: Setting input shape to anything lower than 4x32x32 is not recommended!")
-
 
         super().build(input_shape)
 
